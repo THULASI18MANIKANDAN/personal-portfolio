@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        .home-content {
+            text-align: center;
+            padding: 2rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        .intro h1 {
+            font-size: 3.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .intro p {
+            font-size: 1.3rem;
+            color: #666;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .highlight-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .highlight-section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" class="logo">THULASIMANIKANDAN M</a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="home-content">
+                <img src="image.jpg" alt="image" class="profile-image">
+                
+                <div class="intro">
+                    <h1>THULASIMANIKANDAN M</h1>
+                    <p>Highly motivated B.Tech student pursuing Artificial Intelligence and Data Science at KPRIET, Coimbatore, with a proven track record of academic excellence, graduating from school with 92.3% marks. Passionate about all things tech, I actively engage in technical pursuits and am a proud member of YRC club at KPRIET. Committed to continuous growth, I thrive on gaining knowledge daily and acquiring new skills to stay ahead in the ever-evolving tech landscape.
+                    </p>
+                    <!-- Inline CSS example -->
+                    <a href="projects.html" class="cta-button" style="margin-right: 1rem;">View My Work</a>
+                    <a href="contact.html" class="cta-button" style="background: transparent; border: 2px solid #667eea; color: #667eea;">Get In Touch</a>
+                </div>
+
+                <div class="highlight-section">
+                    <h2>What I Do</h2>
+<p>💻 <strong>Web Development:</strong> I design and build responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
+<p>🎨 <strong>UI/UX Design:</strong> I create clean, intuitive designs with a focus on usability and accessibility.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Email">📧</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="GitHub">🐙</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Alex Johnson Portfolio</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            margin-top: 2rem;
+        }
+
+        .about-text h2 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1.8rem;
+            line-height: 1.8;
+        }
+
+        .education-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .education-section h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .education-section h3::before {
+            content: '🎓';
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .education-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .skills-section h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            padding: 1.8rem;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .skill-category h4 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .skill-category p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .interests-section {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .interests-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .interests-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .interest-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .interests-list {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" class="logo">THULASIMANIKANDAN M</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+    I’m <strong>Thulasimanikandan</strong>, a 3rd-year <strong>B.Tech student in Artificial Intelligence and Data Science</strong> at 
+    <strong>KPR Institute of Engineering and Technology</strong>. I’m passionate about exploring how technology can solve real-world 
+    problems, with a strong interest in <strong>web development, AI, and data-driven solutions</strong>.
+</p>
+<p>
+    I have completed <strong>2-week Frontend Development training</strong> at <strong>MIST</strong>, where I gained hands-on experience 
+    in HTML, CSS, and JavaScript. I also completed a <strong>2-week Backend Development internship</strong> at <strong>GradTwin</strong>, 
+    where I worked with databases, APIs, and server-side programming.
+</p>
+<p>
+    Beyond academics, I have actively participated in various <strong>technical events and competitions</strong>, sharpening my 
+    problem-solving, teamwork, and presentation skills. I believe in continuous learning and always look forward to exploring 
+    new technologies and improving my skills.
+</p>
+<p>
+    My goal is to combine my <strong>AI knowledge</strong> with <strong>full-stack development skills</strong> to create impactful and 
+    innovative projects that deliver value to users.
+</p>
+                    <div class="education-section">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <strong style="color: #667eea; font-size: 1.2rem;">Computer Science</strong><br>
+                            <span style="color: #333; font-weight: 600;">NV MATRIC HR SEC SCHOOL 2023 </span><br>
+                            <!-- Inline CSS example -->
+                            <em style="color: #666; font-size: 0.95rem;">PERCTANGE:93%</em><br>
+                        </div>
+                    </div>
+                    <div class="education-section">
+                        <div class="education-item">
+                            <strong style="color: #667eea; font-size: 1.2rem;">B.TECH AD</strong><br>
+                            <span style="color: #333; font-weight: 600;">KPR Institute of Engineering and Technology 2023-2027</span><br>
+                            <!-- Inline CSS example -->
+                            <em style="color: #666; font-size: 0.95rem;">CGPA:8.135</em><br>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="skills-section">
+                    <h3>Skills </h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>🎨 Frontend Development</h4>
+                            <p> HTML5, CSS3, JavaScript,Bootstrapt</p>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>⚙️ Backend Development</h4>
+                            <p> Python, Django, PHP, REST APIs, Microservices</p>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>🗄️ Database & Storage</h4>
+                            <p>MongoDB, MySQL, PostgreSQL, Cloud Storage Solutions</p>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>🛠️ Tools & Platforms</h4>
+                            <p>Git, AWS, Google Cloud, Figma, </p>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>🌍 Languages</h4>
+                            <p>English,Tamil (native)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Email">📧</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="GitHub">🐙</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
